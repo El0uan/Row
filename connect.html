@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>RoW:U Connection</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <script src="js/ajax.js"></script>
+        <script src="js/connect.js"></script>
+        
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.php" class="brand-logo"><img src="logo.png"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                    <li><a href="connect.html">Se connecter</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <form class="col s6" name="formulairec" onsubmit="return validc()">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input  id="pseudo" type="text" >
+                        <label for="pseudo">Pseudo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Mot de Passe</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Se Connecter
+                </button>          
+            </form>
+            <div id="divc"></div>
+        </div>
+    </body>
+</html>
